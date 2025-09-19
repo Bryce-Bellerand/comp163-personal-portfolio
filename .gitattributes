@@ -1,14 +1,9 @@
 # Auto detect text files and perform LF normalization
-<<<<<<< Updated upstream
 from enum import auto
-=======
-text=auto
->>>>>>> Stashed changes
 from collections import namedtuple
 
 
 # assigning variables
-<<<<<<< Updated upstream
 student_name = "Jordan Smith"
 student_email = "jsmith@ncat.edu"
 student_hometown = "Charlotte, NC"
@@ -40,48 +35,11 @@ course_rooms = {"COMP 163": "M-Eric 300", "MATH 150": "Marteena 201", "ENG 101":
 monthly_budget = {"Food": 450, "Entertainment": 200, "Books": 125, "Transportation": 100}
 study_hours = {"Programming": 10, "Math": 8, "English": 4, "History": 3}
 contacts = {"Mom": "704-555-0199", "Roommate": "336-555-7821", "Academic Advisor": "336-334-5000"}
-=======
-student_name = "Bryce Bellerand"
-student_email = "bcbellerand@ncat.edu"
-student_hometown = "Bronx, NY"
-student_graduation = "Spring 2029"
-student_major = "Computer Science"
-#making lists
-courses_list = ["COMP 163", "MATH 131", "ENG 100", "SPCH 250", "GEEN 111", "COMP 121"]
-credit_hours_list = [3, 4, 3, 3, 1, 1]
-completed_courses_list = ["African American History", "COMP 120", "Pre-Calculus"]
-GPA_history = [3.2, 3.6, 3.4, 3.7]
-#assigning tuples
-first_ec = ("Kristina Keesley", "(Mom) -", "908-607-0199")
-student_address = ("3803 Arundel Court","Greensboro,", "NC", "27406" )
-social_media_handle = namedtuple("social_media_handle", ["social_media", "student_handle", "followers"])
-insta_info = social_media_handle("Instagram", "@bryce_bell22", 256)
-x_info = social_media_handle("Twitter", "@bcbellerand", 67)
-day_of_birth = namedtuple("day_of_birth", ["Birthday", "month", "day", "year"])
-bday = day_of_birth("Birthday", "10", "22", "2007")
-#assigning sets
-skill_sets = {"Python basics", "HTML", "Problem solving", "Time management", "JavaScript"}
-to_learn_skills = {"Game Design", "GitHub", "Web design", "Public speaking"}
-career_interests = {"Software development", "Web development", "Game development"}
-hobbies = {"Gaming", "Writing", "Music"}
-entertainment_log = {"Dragon Ball", "Ironheart", "Life", "Coco", "Pokemon", "Playstation 5", "Friends"}
-#dictionaries
-course_credits = {"COMP 163": 3, "MATH 131": 3, "ENG 100": 3, "SPCH 250": 3, "GEEN 111": 1, "COMP 121": 1}
-course_profs = {"COMP 163": "Prof. Rhodes", "MATH 131": "Prof. Roop", "ENG 100": "Ms. White", "SPCH 250": "Ms. Bush", "GEEN 111":"Prof. Parrish", "COMP 121":"Prof Rhodes"}
-course_rooms = {"COMP 163": " 337", "MATH 131": "Marteena 216", "ENG 100": "GCB 105", "SPCH 250": "N/A", "GEEN 111":" McNair 240", "COMP 121": "Prof. Rhodes"}
-monthly_budget = {"Food": 200, "Entertainment": 100, "Books": 0, "Transportation": 0}
-study_hours = {"Programming": 3, "Math": 2, "English": 2, "Speech": 1}
-contacts = {"Mom": "337-625-6767", "Academic Advisor": "336-285-4213"}
->>>>>>> Stashed changes
 # calculations
 total_credit_hours = sum(credit_hours_list)
 Cumulative_GPA = sum(GPA_history) / 4
 counted_courses = len(completed_courses_list)
-<<<<<<< Updated upstream
 total_studying = study_hours["Programming"] + study_hours["Math"] + study_hours["English"] + study_hours["History"]
-=======
-total_studying = study_hours["Programming"] + study_hours["Math"] + study_hours["English"] + study_hours["Speech"]
->>>>>>> Stashed changes
 work_load = total_studying + sum(credit_hours_list)
 total_monthly_budget = monthly_budget["Food"] + monthly_budget["Entertainment"] + monthly_budget["Books"] + monthly_budget["Transportation"]
 daily_food_budget = monthly_budget["Food"] / 30
@@ -111,19 +69,10 @@ print(f"Weekly Study Time: {total_studying} hours")
 print(f"Academic Investment: ${study_costs:.1f} per study hour")
 print("")
 print("Current Courses:")
-<<<<<<< Updated upstream
 print("COMP 163 - 3 credits - Prof. Rhodes - M-Eric 300")
 print("MATH 150 - 3 credits - Dr. Lee - Marteena 201")
 print("ENG 101 - 3 credits - Dr. Martinez - Crosby 121")
 print("HIS 105 - 3 credits - Dr. Brown - Crosby 210")
-=======
-print(f"{'COMP 163'} | Credits: {course_credits['COMP 163']} | Professor: {course_profs['COMP 163']} | Room: {course_rooms['COMP 163']}")
-print(f"{'MATH 131'} | Credits: {course_credits['MATH 131']} | Professor: {course_profs['MATH 131']} | Room: {course_rooms['MATH 131']}")
-print(f"{'ENG 100'} | Credits: {course_credits['ENG 100']} | Professor: {course_profs['ENG 100']} | Room: {course_rooms['ENG 100']}")
-print(f"{'SPCH 250'} | Credits: {course_credits['SPCH 250']} | Professor: {course_profs['SPCH 250']} | Room: {course_rooms['SPCH 250']}")
-print(f"{'GEEN 111'} | Credits: {course_credits['GEEN 111']} | Professor: {course_profs['GEEN 111']} | Room: {course_rooms['GEEN 111']}")
-print(f"{'COMP 121'} | Credits: {course_credits['COMP 121']} | Professor: {course_profs['COMP 121']} | Room: {course_rooms['COMP 121']}")
->>>>>>> Stashed changes
 print("")
 print("=== PERSONAL DEVELOPMENT ===")
 print(f"Current Skills: {skill_sets}")
@@ -134,17 +83,10 @@ print(f"Skills Want to Learn: {len(to_learn_skills)}")
 print("")
 print("=== FINANCIAL OVERVIEW ===")
 print(f"Monthly Budget: ${total_monthly_budget}")
-<<<<<<< Updated upstream
 print(f"Food: ${monthly_budget["Food"]} (${(450/30):.1f}/day)")
 print(f"Entertainment: ${monthly_budget["Entertainment"]}")
 print(f"Books: ${monthly_budget["Books"]}")
 print(f"Transportation: ${monthly_budget["Transportation"]}")
-=======
-print(f"Food: ${monthly_budget['Food']} (${(40/30):.1f}/day)")
-print(f"Entertainment: ${monthly_budget['Entertainment']}")
-print(f"Books: ${monthly_budget['Books']}")
-print(f"Transportation: ${monthly_budget['Transportation']}")
->>>>>>> Stashed changes
 print(f"Annual Projection: ${annual_budget}")
 print("")
 print("=== CONNECTIONS & CONTACTS ===")
